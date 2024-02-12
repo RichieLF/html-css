@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Protest+Guerrilla&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url('font/IDroid.otf')
+    format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: #84E1AD;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #3BD47F, #258350, #1A5C38);
+    color: white;
+    font-family:'Oswald', sans-serif;
+    font-weight: 100;
+}
+
+header > h1,p {
+    text-align: center;
+}
+
+header > p {
+    color: rgba(255, 255, 255, 0.699);
+}
+
+nav{
+    padding: 5px 10px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+main {
+    background-color: white;
+    text-align: justify;
+    margin: 0px 50px;
+    padding-top: 1px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+main > article > p {
+    text-indent: 20px;
+}
+
+article > h1 {
+    font-family: 'idroid', sans-serif;
+    color: #367351;
+    padding: 0px 10px;
+    font-weight: 600;
+}
+
+article > h2 {
+    font-family: 'idroid', sans-serif;
+    color: #367351;
+    background-image: linear-gradient(to right, #C6ECD6, #E2F6EA, #FEFFFE );
+    padding: 0px 10px;
+    font-weight: 100;
+}
+
+article > p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+article > p > a {
+    text-decoration: none;
+    color: #367351;
+    font-weight: bold;
+
+}
+
+section {
+    background-color: #C5EBD6;
+    margin: 20px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    box-shadow: 3px -1px rgba(0, 0, 0, 0.219);
+}
+
+section > h3 {
+    background-color: #2FA866;
+    color: white;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+section > p {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 0px 10px;
+}
+
+footer {
+    background-color: #1A5C38;
+    color: white;
+}

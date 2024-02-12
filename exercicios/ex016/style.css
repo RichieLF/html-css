@@ -1,0 +1,31 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    /*height: 100;*/
+}
+
+body {
+    background-image: linear-gradient(to right, #01415B, #005148, #019587, #A6BC09, #CCEA8D);
+}
+
+main {
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgb(1, 65, 91);
+}
+
+h1{
+    color: #A6BC09;
+    text-align: center;
+    text-shadow: 4px 4px 4px #CCEA8D;
+}
+
+h2 {
+    color: #019587;
+}
+
+p {
+    text-align: justify;
+}
