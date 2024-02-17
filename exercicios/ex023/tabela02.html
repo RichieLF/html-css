@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+             font-size: 1.5em;
+             font-weight: bold;
+             padding: 10px;
+             background-color: lightgray;
+             border-radius: 5px 5px 0px 0px;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+    
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+           
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: #383838;
+        }
+        
+        td.num {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(odd){ /*2n*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){ /*2n*/
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>Populaçao da unidades federativas</caption>
+        <thead id="cabeçalho">
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Poulaçao</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao Paulo</td>
+                <td class="num">450000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">170000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">210000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae facilis exercitationem similique placeat vel numquam dicta unde ipsum magni repellendus vitae nobis sed quibusdam ducimus, commodi nesciunt expedita laborum! Quo?</p>
+    
+</body>
+</html>
