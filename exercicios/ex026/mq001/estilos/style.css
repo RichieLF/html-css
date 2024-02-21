@@ -39,6 +39,10 @@ li:hover {
     color: lightblue;
 }
 
+li:valid {
+    background-color: rgb(148, 11, 11);
+}
+
 article {
     width: 600px;
     height: 100vh;

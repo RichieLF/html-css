@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-queries</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li>Opção 1</li>
+                <li>Opção 2</li>
+                <li>Opção 3</li>
+                <li>Opção 4</li>
+                <li>Opção 5</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h1>Testando Media Queries</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In alias sequi nemo blanditiis laudantium placeat voluptatum labore nisi ipsam, amet ratione perspiciatis laboriosam suscipit pariatur animi minus rem harum architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur harum place lo at illum, reiciendis at aliquam inventore animi omnis doloribus suscipit, beatae saepe! Id optio dolores veniam asperiores eius natus iste?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus voluptatum ad. Quis amet dolorum sed iste voluptatum accusantium nobis aperiam aliquam, veritatis, inventore itaque dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id fugit exercitationem error laudantium atque voluptatibus culpa totam! Maxime numquam itaque cupiditate, accusantium a magni maiores tempora ducimus minus inventore? Quas! Vero illo quisquam dicta.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In alias sequi nemo blanditiis laudantium placeat voluptatum labore nisi ipsam, amet ratione perspiciatis laboriosam suscipit pariatur animi minus rem harum architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur harum placeat illum, reiciendis at aliquam inventore animi omnis doloribus suscipit, beatae saepe! Id optio dolores veniam asperiores eius natus iste?</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu () {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
